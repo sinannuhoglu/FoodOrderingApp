@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="mainThema">#ee2938</color>
+    <color name="backgroundColor">#D3D3D3</color>
+    <color name="background">#252836</color>
+    <color name="itemColor">#1f1d2b</color>
+    <color name="navColor">#ea7c69</color>
+
+    <color name="red">#ee2938</color>
+    <color name="gray">#B0B0B0</color>
+    
+    <color name="mainBackground">#f8f9fe</color>
+    <color name="mainItem">#2e3345</color>
+</resources>

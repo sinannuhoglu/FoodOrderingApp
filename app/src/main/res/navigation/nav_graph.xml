@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.sinannuhoglu.foodorderingapp.ui.splash.SplashFragment"
+        android:label="Splash">
+        <action
+            android:id="@+id/action_splashFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.sinannuhoglu.foodorderingapp.ui.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.sinannuhoglu.foodorderingapp.ui.detail.DetailFragment"
+        android:label="Details"
+        tools:layout="@layout/fragment_detail">
+        <argument
+            android:name="foodId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_detailFragment_to_basketFragment"
+            app:destination="@id/basketFragment" />
+        <action
+            android:id="@+id/action_detailFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/basketFragment"
+        android:name="com.sinannuhoglu.foodorderingapp.ui.basket.BasketFragment"
+        android:label="Basket"
+        tools:layout="@layout/fragment_basket" />
+
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.sinannuhoglu.foodorderingapp.ui.favorite.FavoriteFragment"
+        android:label="Favorite">
+
+        <action
+            android:id="@+id/action_favoriteFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+
+</navigation>
