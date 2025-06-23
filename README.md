@@ -1,5 +1,4 @@
 # FoodOrderingApp
-![Status](https://img.shields.io/badge/status-in--development-yellow)
 
 An Android application built with Kotlin that allows users to explore a variety of meals, view details, manage favorites and cart, then place orders easily. 
 
